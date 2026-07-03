@@ -1,0 +1,82 @@
+[
+  {
+    "id": "student-turkish",
+    "category": "student",
+    "title": "Турецкая ночь",
+    "date": "25.04.2025",
+    "shortDescription": "Культурный вечер с музыкой, танцами и яркими деталями.",
+    "cover": "photos/студмероприятия/турецкая_ночь (2).jpg"
+  },
+  {
+    "id": "concert-malezhik",
+    "category": "concerts",
+    "title": "Ночь музыки — Малежик",
+    "date": "22.11.2025",
+    "shortDescription": "Концертная съёмка с динамичным светом и энергией сцены.",
+    "cover": "photos/ночьмузыки2025/малежик (1).jpg"
+  },
+  {
+    "id": "concert-olya",
+    "category": "concerts",
+    "title": "Ночь музыки — Оля Краснова",
+    "date": "22.11.2025",
+    "shortDescription": "Сольное выступление: свет, эмоции, контакт со залом.",
+    "cover": "photos/ночьмузыки2025/оля_краснова (1).jpg"
+  },
+  {
+    "id": "student-pohod",
+    "category": "student",
+    "title": "Студенческий поход",
+    "date": "18.05.2025",
+    "shortDescription": "Природа, команда и репортаж в движении.",
+    "cover": "photos/студмероприятия/поход (2).jpg"
+  },
+  {
+    "id": "conf-kirgizy",
+    "category": "conferences",
+    "title": "Международная встреча «Киргизы»",
+    "date": "15.09.2025",
+    "shortDescription": "Дипломатический формат, культурная программа и репортажный свет.",
+    "cover": "photos/конференции/киргизы (2).jpg"
+  },
+  {
+    "id": "wedding-main",
+    "category": "wedding",
+    "title": "Свадебная история",
+    "date": "14.06.2025",
+    "shortDescription": "Целый день эмоций: от сборов до первого танца.",
+    "cover": "photos/свадьба/IMG_7979.jpg"
+  },
+  {
+    "id": "student-testdrive",
+    "category": "student",
+    "title": "Тест-драйв УрФУ",
+    "date": "12.04.2025",
+    "shortDescription": "День открытых дверей и знакомство абитуриентов с университетом.",
+    "cover": "photos/студмероприятия/тестдрайфурфу (2).jpg"
+  },
+  {
+    "id": "phototour-vs",
+    "category": "phototour",
+    "title": "Фототур с Викторией и Сергеем",
+    "date": "10.08.2025",
+    "shortDescription": "Путешествие по Уралу: пейзажи, люди и учебный процесс.",
+    "cover": "photos/фототурВикторияСергей/IMG_9332.jpg"
+  },
+  {
+    "id": "conf-7october",
+    "category": "conferences",
+    "title": "Конференция 7 октября",
+    "date": "07.10.2025",
+    "shortDescription": "Репортаж с масштабной конференции: доклады, нетворкинг и закулисье.",
+    "cover": "photos/конференции/7октября (2).jpg"
+  },
+  {
+    "id": "student-maslenitsa",
+    "category": "student",
+    "title": "Масленица на кампусе",
+    "date": "02.03.2025",
+    "shortDescription": "Студенческий праздник с атмосферой весны и движения.",
+    "cover": "photos/студмероприятия/масленица (2).jpg"
+  }
+]

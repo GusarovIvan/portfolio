@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Гусаров Иван — фотограф</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site">
+    <main class="main-pane">
+      <header class="main-header">
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="sidebar">Меню</button>
+        <div class="main-intro">
+          <h1 class="main-intro__name">Гусаров Иван</h1>
+          <p class="main-intro__tag">Репортажный фотограф · Екатеринбург</p>
+          <p class="main-intro__text">Снимаю конференции, свадьбы, концерты и студенческие мероприятия. Фотограф УрФУ, работаю в разных городах России.</p>
+        </div>
+        <div class="filter-wrap">
+          <div class="filter-scroll" id="categoryFilter" role="tablist" aria-label="Категории съёмок"></div>
+        </div>
+      </header>
+
+      <section class="feed" id="feed" aria-live="polite"></section>
+
+      <footer class="main-footer">
+        <span class="main-footer__name">Гусаров Иван</span>
+        <span class="main-footer__tag">Репортажная фотография</span>
+        <button type="button" class="main-footer__menu" id="menuFooterToggle" aria-label="Открыть меню" aria-expanded="false">≡</button>
+      </footer>
+    </main>
+
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav" id="sidebarNav">
+        <button type="button" class="sidebar-nav__item is-active" data-panel="about">Обо мне</button>
+        <button type="button" class="sidebar-nav__item" data-panel="contacts">Контакты</button>
+        <button type="button" class="sidebar-nav__item" data-panel="price">Прайс</button>
+        <button type="button" class="sidebar-nav__item" data-panel="reviews">Отзывы</button>
+      </nav>
+
+      <div class="sidebar-content">
+        <section class="sidebar-panel is-active" id="panel-about">
+          <h2 class="sidebar-panel__title">Гусаров Иван</h2>
+          <p class="sidebar-panel__lead">Фотограф в Уральском Федеральном Университете, член фотоклуба УрФУ.</p>
+          <div class="sidebar-panel__text">
+            <p>Я люблю любую фотографию, и поэтому успешно работаю сразу в нескольких жанрах.</p>
+            <p>Мой основной профиль — репортажная фотография: от корпоративов до масштабных конференций, от одного часа и вплоть до съёмочной недели, в разных регионах нашей необъятной.</p>
+            <p>Для такого широкого спектра съёмок у меня есть вся необходимая техника: камера, объективы, постоянный и импульсный свет и многое другое.</p>
+            <p>Также я люблю, когда клиенты получают свои фото как можно быстрее, поэтому делаю их быстро — в течение 1–2 дней после съёмки.</p>
+          </div>
+        </section>
+
+        <section class="sidebar-panel" id="panel-contacts">
+          <h2 class="sidebar-panel__title">Контакты</h2>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-list__label">Telegram</span>
+              <a href="https://t.me/gusar_ivan" target="_blank" rel="noopener">@gusar_ivan</a>
+            </li>
+            <li>
+              <span class="contact-list__label">ВКонтакте</span>
+              <a href="https://vk.com/gusar_ivan" target="_blank" rel="noopener">@gusar_ivan</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="sidebar-panel" id="panel-price">
+          <h2 class="sidebar-panel__title">Прайс</h2>
+          <p class="price-value">3 000 ₽ <span>/ час</span></p>
+          <p class="sidebar-panel__text">Единая ставка для всех видов съёмок: конференции, студенческие мероприятия, свадьбы, концерты, фототуры.</p>
+        </section>
+
+        <section class="sidebar-panel" id="panel-reviews">
+          <h2 class="sidebar-panel__title">Отзывы</h2>
+          <div id="reviewsList" class="reviews-list"></div>
+          <a id="reviewFormLink" class="review-form-link" href="#" target="_blank" rel="noopener">Оставить отзыв →</a>
+        </section>
+      </div>
+
+      <div class="sidebar-brand">
+        
+        <p class="sidebar-brand__name">Гусаров<br>Иван</p>
+        <p class="sidebar-brand__tag">Фотограф</p>
+      </div>
+      <button type="button" class="sidebar-close" id="sidebarClose" aria-label="Закрыть меню">×</button>
+    </aside>
+  </div>
+
+  <div class="mobile-backdrop" id="mobileBackdrop" hidden></div>
+
+  <div class="project-overlay" id="projectOverlay" hidden>
+    <div class="project-overlay__inner">
+      <article class="project-view">
+        <header class="project-view__header">
+          <h1 class="project-view__title" id="projectTitle"></h1>
+          <button type="button" class="project-view__close" id="projectClose" aria-label="Закрыть">×</button>
+        </header>
+
+        <div class="project-gallery" id="projectGallery">
+          <button type="button" class="gallery-nav gallery-nav--prev" id="galleryPrev" aria-label="Предыдущее фото">‹</button>
+          <div class="gallery-track-wrap">
+            <div class="gallery-track" id="galleryTrack"></div>
+          </div>
+          <button type="button" class="gallery-nav gallery-nav--next" id="galleryNext" aria-label="Следующее фото">›</button>
+        </div>
+
+        <div class="project-view__body">
+          <div class="project-view__columns" id="projectText"></div>
+          <aside class="project-view__meta" id="projectMeta"></aside>
+        </div>
+
+        <div class="project-view__brand" aria-hidden="true">
+          <p class="project-view__brand-name">Гусаров Иван</p>
+        </div>
+      </article>
+
+      <aside class="project-sidebar">
+        <div class="project-sidebar__list" id="projectSidebarList"></div>
+        <div class="sidebar-brand sidebar-brand--compact">
+          <p class="sidebar-brand__name">Гусаров<br>Иван</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="lightbox" id="photoLightbox" hidden>
+    <button type="button" class="lightbox__close" id="lightboxClose" aria-label="Закрыть">×</button>
+    <button type="button" class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Предыдущее">‹</button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    </div>
+    <button type="button" class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Следующее">›</button>
+    <p class="lightbox__counter" id="lightboxCounter"></p>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
