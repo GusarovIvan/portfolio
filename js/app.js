@@ -211,6 +211,17 @@ function syncGalleryHeight() {
   const slides = els.galleryTrack?.querySelectorAll(".gallery-slide");
   if (!wrap || !slides?.length) return;
 
+  const isMobile = window.matchMedia("(max-width: 900px)").matches;
+
+  if (isMobile) {
+    const galleryHeight = Math.round(window.innerHeight * 0.42);
+    wrap.style.height = `${galleryHeight}px`;
+    slides.forEach((slide) => {
+      slide.style.minHeight = `${galleryHeight}px`;
+    });
+    return;
+  }
+
   const current = slides[state.galleryIndex];
   if (!current) return;
 

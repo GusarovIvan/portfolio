@@ -14,11 +14,6 @@
     <main class="main-pane">
       <header class="main-header">
         <button type="button" class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="sidebar">Меню</button>
-        <div class="main-intro">
-          <h1 class="main-intro__name">Гусаров Иван</h1>
-          <p class="main-intro__tag">Репортажный фотограф · Екатеринбург</p>
-          <p class="main-intro__text">Снимаю конференции, свадьбы, концерты и студенческие мероприятия. Фотограф УрФУ, работаю в разных городах России.</p>
-        </div>
         <div class="filter-wrap">
           <div class="filter-scroll" id="categoryFilter" role="tablist" aria-label="Категории съёмок"></div>
         </div>
@@ -27,8 +22,10 @@
       <section class="feed" id="feed" aria-live="polite"></section>
 
       <footer class="main-footer">
-        <span class="main-footer__name">Гусаров Иван</span>
-        <span class="main-footer__tag">Репортажная фотография</span>
+        <div class="main-footer__brand">
+          <span class="main-footer__name">Гусаров Иван</span>
+          <span class="main-footer__tag">Репортажный фотограф</span>
+        </div>
         <button type="button" class="main-footer__menu" id="menuFooterToggle" aria-label="Открыть меню" aria-expanded="false">≡</button>
       </footer>
     </main>
@@ -44,12 +41,13 @@
       <div class="sidebar-content">
         <section class="sidebar-panel is-active" id="panel-about">
           <h2 class="sidebar-panel__title">Гусаров Иван</h2>
-          <p class="sidebar-panel__lead">Фотограф в Уральском Федеральном Университете, член фотоклуба УрФУ.</p>
+          <p class="sidebar-panel__lead" >Фотограф в Уральском Федеральном Университете, член фотоклуба УрФУ. Снимал для УрФУ, Контура, Иннопрома, Ночи Музыки.</p>
+          <img src="photos/gusarov.jpg"><br>
           <div class="sidebar-panel__text">
             <p>Я люблю любую фотографию, и поэтому успешно работаю сразу в нескольких жанрах.</p>
-            <p>Мой основной профиль — репортажная фотография: от корпоративов до масштабных конференций, от одного часа и вплоть до съёмочной недели, в разных регионах нашей необъятной.</p>
-            <p>Для такого широкого спектра съёмок у меня есть вся необходимая техника: камера, объективы, постоянный и импульсный свет и многое другое.</p>
-            <p>Также я люблю, когда клиенты получают свои фото как можно быстрее, поэтому делаю их быстро — в течение 1–2 дней после съёмки.</p>
+            <p>Мой основной профиль — репортажная фотография: от корпоративов до масштабных конференций, от одного часа и до серии из нескольких дней.</p>
+            <p>Для такого широкого спектра съёмок у меня есть техника: камера, объективы, вспышка.</p>
+            <p>Также я люблю, когда клиенты получают свои фото как можно быстрее, поэтому делаю их быстро — в течение нескольких дней после съёмки.</p>
           </div>
         </section>
 
@@ -69,7 +67,7 @@
 
         <section class="sidebar-panel" id="panel-price">
           <h2 class="sidebar-panel__title">Прайс</h2>
-          <p class="price-value">3 000 ₽ <span>/ час</span></p>
+          <p class="price-value">4 000 ₽ <span>/ час</span></p>
           <p class="sidebar-panel__text">Единая ставка для всех видов съёмок: конференции, студенческие мероприятия, свадьбы, концерты, фототуры.</p>
         </section>
 
