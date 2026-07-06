@@ -1,5 +1,13 @@
 [
   {
+    "id": "territoria-vetra",
+    "category": "models",
+    "title": "Территория ветра",
+    "date": "25.04.2025",
+    "shortDescription": "Модель: Люба.",
+    "cover": "photos/модели/территория_ветра.jpg"
+  },
+  {
     "id": "student-turkish",
     "category": "student",
     "title": "Турецкая ночь",
