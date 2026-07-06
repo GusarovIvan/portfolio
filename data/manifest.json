@@ -1,5 +1,13 @@
 [
   {
+    "id": "wedding-main",
+    "category": "wedding",
+    "title": "Свадебная история",
+    "date": "20.12.2025",
+    "shortDescription": "Вечер эмоций: банкет, объединивший всю семью.",
+    "cover": "photos/свадьба/IMG_7979.jpg"
+  },
+  {
     "id": "territoria-vetra",
     "category": "models",
     "title": "Территория ветра",
@@ -46,14 +54,6 @@
     "date": "15.09.2025",
     "shortDescription": "В Уральском гуманитарном институте УрФУ состоялось торжественное открытие центра киргизоведения.",
     "cover": "photos/конференции/киргизы (2).jpg"
-  },
-  {
-    "id": "wedding-main",
-    "category": "wedding",
-    "title": "Свадебная история",
-    "date": "14.06.2025",
-    "shortDescription": "Вечер эмоций: банкет, объединивший всю семью.",
-    "cover": "photos/свадьба/IMG_7979.jpg"
   },
   {
     "id": "student-testdrive",
